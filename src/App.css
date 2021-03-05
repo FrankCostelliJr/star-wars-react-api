@@ -1,38 +1,77 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  font-family: "Jura", sans-serif;
+  color: white;
+  line-height: 1.25rem;
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+  font-family: "Jura", sans-serif;
+  transition: 1.75s;
+  transition-delay: 0.1s;
+  border: white solid 1px;
+  padding: 5px;
+}
+
+a:hover {
+  color: black;
+  background-color: yellow;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  background-color: black;
+  color: yellow;
+  margin-top: 10px;
+  padding: 5px;
+  padding-bottom: 0;
+  font-family: "Krona One", sans-serif;
   text-align: center;
+  border: 2px solid yellow;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  font-size: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header p {
+  font-family: "Jura", sans-serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  width: 100%;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.cat-row {
+  border: 1px yellow solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 30px 10px 5px 20px;
+}
+
+.group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item {
+  flex: 1;
 }
